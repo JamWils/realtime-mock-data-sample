@@ -8,7 +8,7 @@ const jsonFormatted = JSON.stringify(json);
 
 console.log(util.inspect(json, false, null));
 
-fs.writeFile("./buildScripts/mockData/db.json", jsonFormatted, (err) => {
+fs.writeFile("./mockData/db.json", jsonFormatted, (err) => {
     if (err) {
         return console.log(chalk.red(err));
     } else {
